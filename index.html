@@ -1,0 +1,51 @@
+<!-- ******INDEX HTML MAC EVERETT INSTANEWS*************** -->
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <title>InstaNews</title>
+ <link rel="stylesheet" href="reset.css">
+ <link type="text/css" rel="stylesheet" href="http://gregfranko.com/jquery.selectBoxIt.js/css/jquery.selectBoxIt.css" />
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+ <link rel="stylesheet" href="style.scss">
+</head>
+<body>
+  <header class="head-large container">
+        <div class="logo-container">
+         <img class="logo-large" src="assets/images/nyt-logo.svg" alt="NYT Logo" />
+        </div>
+        <!-- **************************DROP DOWN MENU NYT ********************  -->
+        <div class="dropdown">
+            <p>Choose a section:</p>
+            <select id="my-select" class="select-opt">
+              <option value="" disabled="disabled" selected="selected">Sections...</option>
+              <option value="Home">Home</option>
+              <option value="Science">Science</option>
+              <option value="Business">Business</option>
+              <option value="Sports">Sports</option>
+              <option value="Technology">Technology</option>
+              <option value="Fashion">Fashion</option>
+            </select>
+       </div>
+    </header>
+    <!--*****************************END OF HEADER*****************************  -->
+    <!--**************************LOADING GIF CHECKEDJULY25****************************-->
+    <div class="loader-gif">
+        <img src="assets/images/ajax-loader.gif" alt="Loading" class="loading">
+    </div>
+
+    <!--**************************** Article FLEXZONE****************** -->
+    <section class="news-articles">
+    </section>
+
+    <!-- ***************** SITE FOOTER******************************* -->
+  <footer class="site-foot container">
+      <p><i class="fa fa-copyright"></i> Copyright 2016 <strong>instanews</strong>
+      </p  >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+    <script src="http://gregfranko.com/jquery.selectBoxIt.js/js/jquery.selectBoxIt.min.js"></script>
+    <script src="main.js"></script>
+  </footer>
+</body>
+</html>
