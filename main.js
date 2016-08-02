@@ -34,7 +34,7 @@ var url = "https://api.nytimes.com/svc/topstories/v2/"+ selection +".json";
 // if (data.results.length === 0) {
 //     $('.news-articles').append(`<p>Sorry. Please try another section.</p>`);
 // } else {
-//     let nytData = data.results.filter(function(item) {
+     let nytData = data.results.filter(function(item) {
 //         return item.multimedia.length;
 //     }).splice(0, 12)
 //     .forEach(function(item, index) {
@@ -47,7 +47,7 @@ var url = "https://api.nytimes.com/svc/topstories/v2/"+ selection +".json";
 //         </div>
 //         </a>`);
 // // TO MAKE SURE ARTICLE HAS IMAGE
-// let img = item.multimedia[4];
+let img = item.multimedia[4];
 // $('.article-' + index).css('background-image', `url("${img.url}")`);
 // $('.text-'+index).hide();
 // $('.article-'+index).hover(function() {
